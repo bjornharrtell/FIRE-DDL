@@ -1,0 +1,2 @@
+# FIRE-DDL
+SQL on 🔥 
