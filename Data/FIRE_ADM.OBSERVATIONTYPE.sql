@@ -1,58 +1,54 @@
-SET DEFINE OFF;
+ï»¿SET DEFINE OFF;
 --SQL Statement which produced this data:
 --
 --  SELECT * FROM FIRE_ADM.OBSERVATIONTYPE;
 --
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4, VALUE5, 
-    VALUE6, VALUE7, VALUE8)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4, VALUE5, VALUE6, 
+    VALUE7, VALUE8)
  Values
-   (1, 'Koteforskel fra fikspunkt1 til fikspunkt2 (h2-h1) opmålt geometrisk ', 'geometrisk_koteforskel', 'true', 'false', 
-    'Koteforskel [m]', 'Nivellementslængde [m]', 'Antal opstillinger', 'Variabel vedr. eta_1 (refraktion) [m^3]', 'Afstandsafhængig varians koteforskel pr. målt koteforskel [m^2/m]', 
-    'Afstandsuafhængig varians koteforskel pr. målt koteforskel [m^2]', 'Total varians koteforskel [m^2]', 'Præcisionsnivellement [0,1,2,3]');
+   (1, 'Koteforskel fra fikspunkt1 til fikspunkt2 (h2-h1) opmÃ¥lt geometrisk ', 'geometrisk_koteforskel', 'true', 'Koteforskel [m]', 
+    'NivellementslÃ¦ngde [m]', 'Antal opstillinger', 'Variabel vedr. eta_1 (refraktion) [m^3]', 'AfstandsafhÃ¦ngig varians koteforskel pr. mÃ¥lt koteforskel [m^2/m]', 'AfstandsuafhÃ¦ngig varians koteforskel pr. mÃ¥lt koteforskel [m^2]', 
+    'Total varians koteforskel [m^2]', 'PrÃ¦cisionsnivellement [0,1,2,3]');
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4, VALUE5, 
-    VALUE6)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4, VALUE5, VALUE6)
  Values
-   (2, 'Koteforskel fra fikspunkt1 til fikspunkt2 (h2-h1) opmålt trigonometrisk', 'trigonometrisk_koteforskel', 'true', 'false', 
-    'Koteforskel [m]', 'Nivellementslængde [m]', 'Antal opstillinger', 'Afstandsafhængig varians pr. målt koteforskel [m^2/m^2]', 'Afstandsuafhængig varians pr. målt koteforskel [m^2]', 
-    'Total varians koteforskel [m^2]');
+   (2, 'Koteforskel fra fikspunkt1 til fikspunkt2 (h2-h1) opmÃ¥lt trigonometrisk', 'trigonometrisk_koteforskel', 'true', 'Koteforskel [m]', 
+    'NivellementslÃ¦ngde [m]', 'Antal opstillinger', 'AfstandsafhÃ¦ngig varians pr. mÃ¥lt koteforskel [m^2/m^2]', 'AfstandsuafhÃ¦ngig varians pr. mÃ¥lt koteforskel [m^2]', 'Total varians koteforskel [m^2]');
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4)
  Values
-   (3, 'Horisontal retning med uret fra opstilling til sigtepunkt (reduceret til ellipsoiden)', 'retning', 'true', 'false', 
-    'Retning [m]', 'Varians  retning hidrørende instrument, pr. sats  [rad^2]', 'Samlet centreringsvarians for instrument prisme [m^2]', 'Total varians retning [rad^2]');
+   (3, 'Horisontal retning med uret fra opstilling til sigtepunkt (reduceret til ellipsoiden)', 'retning', 'true', 'Retning [m]', 
+    'Varians  retning hidrÃ¸rende instrument, pr. sats  [rad^2]', 'Samlet centreringsvarians for instrument prisme [m^2]', 'Total varians retning [rad^2]');
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4)
  Values
-   (4, 'Horisontal afstand mellem opstilling og sigtepunkt (reduceret til ellipsoiden)', 'horisontalafstand', 'true', 'false', 
-    'Afstand [m]', 'Afstandsafhængig varians afstandsmåler [m^2/m^2]', 'Samlet varians for centrering af instrument og prisme, samt grundfejl på afstandsmåler [m^2]', 'Total varians horisontalafstand [m^2]');
+   (4, 'Horisontal afstand mellem opstilling og sigtepunkt (reduceret til ellipsoiden)', 'horisontalafstand', 'true', 'Afstand [m]', 
+    'AfstandsafhÃ¦ngig varians afstandsmÃ¥ler [m^2/m^2]', 'Samlet varians for centrering af instrument og prisme, samt grundfejl pÃ¥ afstandsmÃ¥ler [m^2]', 'Total varians horisontalafstand [m^2]');
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4)
  Values
-   (5, 'Skråafstand mellem opstilling og sigtepunkt', 'skråafstand', 'true', 'false', 
-    'Afstand [m]', 'Afstandsafhængig varians afstandsmåler pr. måling [m^2/m^2]', 'Samlet varians for centrering af instrument og prisme, samt grundfejl på afstandsmåler pr. måling [m^2]', 'Total varians skråafstand [m^2]');
+   (5, 'SkrÃ¥afstand mellem opstilling og sigtepunkt', 'skrÃ¥afstand', 'true', 'Afstand [m]', 
+    'AfstandsafhÃ¦ngig varians afstandsmÃ¥ler pr. mÃ¥ling [m^2/m^2]', 'Samlet varians for centrering af instrument og prisme, samt grundfejl pÃ¥ afstandsmÃ¥ler pr. mÃ¥ling [m^2]', 'Total varians skrÃ¥afstand [m^2]');
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4, VALUE5, 
-    VALUE6)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4, VALUE5, VALUE6)
  Values
-   (6, 'Zenitvinkel mellem opstilling og sigtepunkt', 'zenitvinkel', 'true', 'false', 
-    'Zenitvinkel [rad]', 'Instrumenthøjde [m]', 'Højde sigtepunkt [m]', 'Varians zenitvinkel hidrørende instrument, pr. sats  [rad^2]', 'Samlet varians instrumenthøjde/højde sigtepunkt [m^2]', 
-    'Total varians zenitvinkel [rad^2]');
+   (6, 'Zenitvinkel mellem opstilling og sigtepunkt', 'zenitvinkel', 'true', 'Zenitvinkel [rad]', 
+    'InstrumenthÃ¸jde [m]', 'HÃ¸jde sigtepunkt [m]', 'Varians zenitvinkel hidrÃ¸rende instrument, pr. sats  [rad^2]', 'Samlet varians instrumenthÃ¸jde/hÃ¸jde sigtepunkt [m^2]', 'Total varians zenitvinkel [rad^2]');
 Insert into OBSERVATIONTYPE
-   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKT1, SIGTEPUNKT2, 
-    VALUE1, VALUE2, VALUE3, VALUE4, VALUE5, 
-    VALUE6, VALUE7, VALUE8, VALUE9, VALUE10, 
-    VALUE11, VALUE12)
+   (OBJECTID, BESKRIVELSE, OBSERVATIONSTYPE, SIGTEPUNKTID, VALUE1, 
+    VALUE2, VALUE3, VALUE4, VALUE5, VALUE6, 
+    VALUE7, VALUE8, VALUE9, VALUE10, VALUE11, 
+    VALUE12)
  Values
-   (7, 'Vektor der beskriver koordinatforskellen fra punkt 1 til punkt 1 (v2-v1)', 'vektor', 'true', 'false', 
-    'dx [m]', 'dy [m]', 'dz [m]', 'Afstandsafhængig varians [m^2/m^2]', 'Samlet varians for centrering af antenner [m^2]', 
-    'Total varians [m^2]', 'Varians dx [m^2]', 'Varians dy [m^2]', 'Varians dz [m^2]', 'Covarians dx, dy [m^2]', 
-    'Covarians dx, dz [m^2]', 'Covarians dy, dz [m^2]');
+   (7, 'Vektor der beskriver koordinatforskellen fra punkt 1 til punkt 1 (v2-v1)', 'vektor', 'true', 'dx [m]', 
+    'dy [m]', 'dz [m]', 'AfstandsafhÃ¦ngig varians [m^2/m^2]', 'Samlet varians for centrering af antenner [m^2]', 'Total varians [m^2]', 
+    'Varians dx [m^2]', 'Varians dy [m^2]', 'Varians dz [m^2]', 'Covarians dx, dy [m^2]', 'Covarians dx, dz [m^2]', 
+    'Covarians dy, dz [m^2]');
 COMMIT;

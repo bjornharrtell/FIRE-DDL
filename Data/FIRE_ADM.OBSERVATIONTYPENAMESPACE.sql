@@ -6,5 +6,5 @@ SET DEFINE OFF;
 Insert into OBSERVATIONTYPENAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (3, 'Ingen beskrivelse', 'OBS');
+   (1, 'Ingen beskrivelse', 'OBS');
 COMMIT;

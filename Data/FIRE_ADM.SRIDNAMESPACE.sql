@@ -6,29 +6,29 @@ SET DEFINE OFF;
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (8, 'Ingen beskrivelse', 'DK');
+   (1, 'Ingen beskrivelse', 'DK');
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (9, 'Ingen beskrivelse', 'EPSG');
+   (2, 'Ingen beskrivelse', 'EPSG');
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (10, 'Ingen beskrivelse', 'FO');
+   (3, 'Ingen beskrivelse', 'FO');
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (11, 'Ingen beskrivelse', 'GL');
+   (4, 'Ingen beskrivelse', 'GL');
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (12, 'Ingen beskrivelse', 'LOC');
+   (5, 'Ingen beskrivelse', 'LOC');
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (13, 'Ingen beskrivelse', 'NKG');
+   (6, 'Ingen beskrivelse', 'NKG');
 Insert into SRIDNAMESPACE
    (OBJECTID, BESKRIVELSE, NAMESPACE)
  Values
-   (14, 'Ingen beskrivelse', 'TS');
+   (7, 'Ingen beskrivelse', 'TS');
 COMMIT;
